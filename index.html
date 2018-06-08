@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+	<title>Big Reveal</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/fa-svg-with-js.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|Lobster" rel="stylesheet">
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+       
+        <div class="container">
+            <div id="q10" class="question final">
+                <h1>
+                    Get Ready
+                </h1>
+                <p>
+                   Ready to find out? 
+                </p>
+                <a id="yes10" class="submit">👍</a>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div id="bm" class="question bm">
+
+            </div>
+        </div>
+        
+    <!-- Lottie JS -->
+    <script type="text/javascript" src="lottie.js"></script>
+    <!-- animation script -->
+    <script src="index.js"></script>
+    <script>
+    	    $(document).ready(function() {
+
+               
+                $("#bm").hide() 
+            
+                $("#yes10").click(function(event) {
+                    $("#q10").fadeOut(500)                      
+                    $("#bm").delay(500).fadeIn(500) 
+                    var framePlay = count % 2
+                    var framePicker= frames[framePlay] 
+                    // animation.goToAndPlay(0, 0)
+                    animation.playSegments(framePicker, 1)
+                    count++;
+                    })
+
+
+    });
+
+    </script>
+</body>
+</html>

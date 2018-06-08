@@ -1,0 +1,255 @@
+*:focus {
+    outline: none;
+}
+html{
+	overflow-x: hidden;
+}
+body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(270deg, #ef56ff, #31e4ff);
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 15s ease infinite;
+	-moz-animation: AnimationName 15s ease infinite;
+	animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+a,button{transition: all .3s ease-in-out;outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
+a:hover{text-decoration: none; cursor:pointer;}
+
+
+.btn{
+	margin: 0 5px 5px 0;
+}
+.btn.pull-right{
+	margin: 0 0 5px 5px;
+}
+.btn-d,.btn-d:hover,.btn-d:focus{
+	color:#FFF;
+	background:rgba(0,0,0,.3);
+}
+
+/* Prevent ugly blue glow on chrome and safari */
+button{
+	outline: none!important;
+}
+
+
+html, 
+body {
+    height: 100%;
+}
+
+.steps{
+	padding:15px;
+		border:5px solid white;
+		border-radius: 5px;
+
+}
+.start{
+	font-size:3vw;
+}
+.container{
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  max-width:900px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #ffffff;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: none;
+    border: 2px solid white;
+}
+
+.submit{
+	display: inline;
+	width:  100%;
+	font-size:50px;
+	text-align:  center;
+}
+
+input, optgroup, select, textarea {
+    margin-top: 9px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px solid white;
+    height: 55px;
+    width:  100%;
+    font-family:  'Assistant', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    text-transform:  uppercase;
+    background: none;
+    color: white;
+    text-align:center
+}
+input:focus{
+    margin-top: 9px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px solid white;
+    height: 55px;
+    width:  100%;
+    font-family:  'Assistant', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    text-transform:  uppercase;
+    background: none;
+    color: white;
+    text-align:center
+    border-color:white;
+}
+
+
+/*Typography*/
+h1,h2,h3,h4,h5,h6,label,.btn,a{
+	font-family: 'Lobster', cursive;
+}
+p{
+	font-family: 'Assistant', sans-serif;
+}
+
+h1{
+	    text-align:  center;
+	    color: #ffffff;
+	    font-size:4vw;
+
+}
+h2{
+	text-align:  center;
+	font-size: 3vw;
+	color: #fdfdfd;
+}
+p{
+	     color: #fbfbfb;
+	     font-weight: 400;
+	     font-size: 1.2vw;
+	     text-align:  center;
+	     mix-blend-mode: multiply;
+}
+.info{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.info>.col-sm-12>h1{
+        line-height: 60px;
+}
+
+.start>p{
+	    letter-spacing: 9px;
+	    font-size: 19px;
+}
+.steps{
+	margin-top: 25px;
+}
+.question.shake{
+
+	  animation: shake 0.5s infinite;
+}
+.question{
+	    color: #888888;
+	    text-align:  center;
+}
+.question>h1{
+	margin-top: -8px;
+}
+.question>svg>path{
+	fill:white;
+}
+.final>.submit{
+	display:inline;
+}
+#sign{
+  border: 1px solid white;
+  text-align: left;
+  max-width: 300px;
+  padding: 11px;
+  margin: 0 auto;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(3em);
+  }
+  40% {
+    transform: translate(-3em);
+  }
+  60% {
+    transform: translate(3em);
+  }
+  80% {
+    transform: translate(-3em);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+/*Mobile Responsiveness*/
+@media (max-width: 769px)
+{
+	h1{
+		    color: #fdfdfd;
+		    font-size:50px;
+	}
+	.info>.col-sm-12>h1{
+        line-height: 50px;
+}
+	h2{
+		font-size: 30px;
+		color: #fdfdfd;
+		margin-top: 5px;
+	}
+
+	p{
+		     color: #ffffff;
+		     font-weight: 400;
+		     font-size: 19px;
+		     line-height:  24px;
+	}
+	.start{
+	font-size:10px;
+}
+.steps {
+    margin-top: 0px;
+}
+.container{
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  max-width:100%;
+}
+}
